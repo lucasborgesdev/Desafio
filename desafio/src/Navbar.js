@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
 const Navbar = () => (
-        <nav className="navbar navbar-dark bg-info mb-3">
-            <div className="container">
-                <a href="#" className="navbar-brand">GitHub Finder</a>
-            </div>
+  <nav className="navbar navbar-dark  mb-3">
+    <div className="container">
+      <img src="https://compasso.com.br/wp-content/uploads/2020/07/LogoCompasso-Negativo.png.webp"></img>
+      <a href="#"> TESTE FRONTEND COMPASSO REACT</a>
+    </div>
+  </nav>
+);
 
-        </nav>
-    )
-
-    export default Navbar;
+export default Navbar;
