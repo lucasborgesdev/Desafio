@@ -21,7 +21,7 @@ const Profile = ({ user }) => (
         </ul>
         <div className="card-body">
           <a
-            href="user.html_url"
+            href={user.html_url}
             target="_blank"
             className="btn btn-info btn-block"
           >
