@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import axios from "axios";
-import Navbar from "./Navbar";
-import Profile from "./Profile";
-import Repo from "./Repo";
-import { StyledDefault } from "./styled";
+import Navbar from "./components/Navbar/Navbar";
+import Profile from "./components/Profile/Profile";
+import Repo from "./components/Repo/Repo";
+import { StyledDefault } from "./assets/styles/Global";
 
 class App extends Component {
   constructor() {
@@ -19,6 +19,9 @@ class App extends Component {
       repos: [],
       search: "",
     };
+    //const [user, setUser] = useState([]);
+    //const [repos, setRepos] = useState([]);
+    //const [axiosTimeOut, setAxiosTimeOut] = useState ([null]);
   }
 
   getUser = (e) => {
@@ -59,7 +62,7 @@ class App extends Component {
     return (
       <StyledDefault>
         <div>
-          <Navbar className="navbar" />
+          <Navbar />
           <div className="container">
             <div className="search card card-body mb-3">
               <h1>
