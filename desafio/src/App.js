@@ -40,7 +40,6 @@ function App() {
   };
 
   const renderProfile = () => {
-    //const { user, repos } = this.state;
     return (
       <div className="row">
         <div className="col-md-4">
@@ -55,7 +54,6 @@ function App() {
     );
   };
 
-  //const { user, repos } = this.state;
   return (
     <StyledDefault>
       <div>
