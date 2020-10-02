@@ -5,6 +5,9 @@ export const StyledDefault = styled.div`
     font: 18px Poppins;
     --color-navbar-top: #61dafb;
     --color-navbar-background: black;
+    .App {
+      text-align: center;
+    }
   }
   body {
     height: 100vh;
