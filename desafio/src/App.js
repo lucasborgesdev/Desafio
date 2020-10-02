@@ -5,23 +5,6 @@ import Profile from "./components/Profile/Profile";
 import Repo from "./components/Repo/Repo";
 import { StyledDefault } from "./assets/styles/Global";
 
-/** 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      github: {
-        url: "https://api.github.com/users",
-        client_id: "ae030cca50a42d7d37fe",
-        client_secret: "354b04833091e243b4980c4772dc3e07e55a9e80",
-        sort: "created: asc",
-      },
-      user: [],
-      repos: [],
-      search: "",
-    };
-  }
-*/
 function App() {
   const [github, setGithub] = useState({
     url: "https://api.github.com/users",
@@ -48,7 +31,6 @@ function App() {
         .then(({ data }) => setUser(data));
       axios
         .get(
-          //`${url}/${user}/repos?per_page=${count}&sort=${sort}&client_id=${client_id}&client_secret=${client_secret}`
           `${url}/${user}/repos?per_page=${count}&sort=${sort}&client_id=${client_id}&client_secret=${client_secret}`
         )
         .then(({ data }) => setRepos(data));
