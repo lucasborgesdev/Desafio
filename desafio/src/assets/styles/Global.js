@@ -18,7 +18,14 @@ export const StyledDefault = styled.div`
     padding: 0;
     box-sizing: border-box;
   }
-
+  span {
+    margin-left: 5px;
+  }
+  .span-repo {
+    span {
+      align-items: baseline;
+    }
+  }
   .navbar {
     a {
       font-size: 50px;

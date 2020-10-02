@@ -9,7 +9,7 @@ const Repo = ({ repo }) => (
         </a>
       </div>
       <div className="col-md-6">
-        <span className="badge badge-primary">
+        <span className="badge badge-dark">
           Stars: {repo.stargazers_count}{" "}
         </span>
         <span className="badge badge-secondary">
